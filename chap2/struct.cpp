@@ -1,29 +1,24 @@
 #include <iostream>
 
-struct Vector
-{
+struct Vector {
     int num_elements;
-    double* element;
+    double *element;
 };
 
-void vector_init(Vector& vector, int num_elements)
-{
+void vector_init(Vector &vector, int num_elements) {
     vector.element = new double[num_elements];
     vector.num_elements = num_elements;
 }
 
-double read_and_sum(int num_elements)
-{
+double read_and_sum(int num_elements) {
     Vector vector;
     vector_init(vector, num_elements);
-    for (int i=0; i!=num_elements; ++i)
-    {
+    for (int i = 0; i != num_elements; ++i) {
         std::cin >> vector.element[i];
     }
 
     double sum = 0;
-    for (int i=0; i!=num_elements; ++i)
-    {
+    for (int i = 0; i != num_elements; ++i) {
         sum += vector.element[i];
     }
     return sum;
