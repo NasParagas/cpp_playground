@@ -8,3 +8,6 @@ add_executable(const_constexpr const_constexpr.cpp)
 add_executable(struct struct.cpp)
 add_executable(switch switch.cpp)
 add_executable(class class.cpp)
+add_executable(2_4_1_vector
+    2_4_1_vector.cpp
+    2_4_1_user.cpp)
