@@ -25,3 +25,8 @@ int Vector::size() const
 {
     return num_elements;
 }
+
+int main()
+{
+    Vector v1 = {1,3,4,4};
+}
